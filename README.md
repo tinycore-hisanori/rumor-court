@@ -1,5 +1,7 @@
 # Rumor Court (うわさ裁判)
 
+**English** | [日本語](README.ja.md)
+
 **Put internet rumors on trial — with evidence.**
 
 Rumor Court is a courtroom debate game for students. You bring a rumor you saw online ("Eating carrots gives you night vision", "Goldfish have a 3-second memory", or anything you type). An AI agent investigates it on the live web, turns real sources into **evidence cards**, and an AI opponent testifies. Your job is to cross-examine the testimony and **present the evidence card that breaks the false statement**. At the end, the game shows **what is actually true**, with links to every source.
@@ -75,7 +77,7 @@ Tavily is the game's detective: every live case runs 3-4 parallel `search_depth:
 Requirements: Node.js 18+ (no npm dependencies).
 
 ```bash
-git clone <this repo>
+git clone https://github.com/tinycore-hisanori/rumor-court
 cd rumor-court
 cp .env.example .env      # add NEBIUS_API_KEY and TAVILY_API_KEY
 npm start                 # http://localhost:8787
@@ -104,7 +106,7 @@ The container listens on `$PORT` (default 8080 in Docker), so it can be deployed
 
 **Argue** (A, LIVE mode): no evidence? Type your own reasoning — Nemotron judges whether your logic really breaks the statement. Miss twice and Ms. Amano gives a hint.
 
-Click / Enter: advance · ◀ ▶ / arrow keys: move between statements · **Press** (P): ask for details · **Present** (E): show evidence · **Court Record**: read all evidence and open sources.
+Click / Enter: advance · ◀ ▶ / arrow keys: move between statements · **Press** (P): ask for details · **Present** (E): show evidence · **Court Record**: read all evidence and open sources · **M**: sound on/off.
 
 ---
 
@@ -139,8 +141,3 @@ NEBIUS_API_KEY=x TAVILY_API_KEY=y NEBIUS_BASE_URL=http://localhost:9999/v1/ TAVI
 - English "Wait!" voices: **VOICEVOX:白上虎太郎**, **VOICEVOX:冥鳴ひまり** (made with [VOICEVOX](https://voicevox.hiroshiba.jp/), used under each character's terms)
 - `public/vendor/budoux-ja.js`: Japanese phrase segmentation model/parser from [BudouX](https://github.com/google/budoux) (Apache-2.0, © Google LLC), used for natural Japanese line breaks
 
----
-
-## 日本語
-
-ネットで見かけた「うわさ」を、AIが実際にウェブで調べて証拠品にし、相手役のAIが証言します。プレイヤーは証言の中の矛盾に、それを崩す証拠品を「つきつけ」ます。最後に、出典リンク付きで「本当のところ」が明らかになります。検察側（本当だ派）・弁護側（ウソだ派）のどちらでも遊べます。
