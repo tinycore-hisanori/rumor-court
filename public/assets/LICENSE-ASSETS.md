@@ -10,8 +10,8 @@ The source code of this project is licensed separately under the MIT License (se
 # Music and voice
 
 `public/assets/bgm/daily.mp3` ("チャイムの前"), `public/assets/bgm/trial.mp3` ("緊急学級裁判"),
-`public/assets/sfx/matta.mp3` and `public/assets/sfx/hyoshigi.mp3` are © 2026 Tiny Core Inc.,
-reused from the author's earlier game "ぼくらの放課後裁判" (Classroom Trial), and are covered by the same CC BY-NC 4.0 license.
+`public/assets/sfx/matta.mp3` and `public/assets/sfx/hyoshigi.mp3` are © 2026 Tiny Core Inc.
+and are covered by the same CC BY-NC 4.0 license.
 
 # English voice clips (VOICEVOX)
 

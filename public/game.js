@@ -147,7 +147,7 @@
     press: () => { tone(330, 0.12, 'square', 0.12, 200); noise(0.1, 0.2, { filter: 'bandpass', freq: 1500 }); },
   };
 
-  // ---- recorded audio (music & voice from the author's earlier game "ぼくらの放課後裁判")
+  // ---- recorded audio (music, voice and sound effects)
   const buffers = {};
   function loadBuf(url) {
     const a = audio(); if (!a) return Promise.resolve(null);

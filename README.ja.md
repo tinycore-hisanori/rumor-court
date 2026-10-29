@@ -135,6 +135,6 @@ NEBIUS_API_KEY=x TAVILY_API_KEY=y NEBIUS_BASE_URL=http://localhost:9999/v1/ TAVI
 ## ライセンス
 
 - ソースコード：**MIT**（`LICENSE` を参照）
-- キャラクターの立ち絵、BGM、声：**CC BY-NC 4.0**（`public/assets/LICENSE-ASSETS.md` を参照。BGMと「待った！」の声は、作者の前作『ぼくらの放課後裁判』のものを流用）
+- キャラクターの立ち絵、BGM、声：**CC BY-NC 4.0**（`public/assets/LICENSE-ASSETS.md` を参照）
 - 英語の「Wait!」の声：**VOICEVOX:白上虎太郎**、**VOICEVOX:冥鳴ひまり**（[VOICEVOX](https://voicevox.hiroshiba.jp/) で作成。各キャラクターの利用規約に従って使用）
 - `public/vendor/budoux-ja.js`：[BudouX](https://github.com/google/budoux) の日本語文節区切りモデル（Apache-2.0、© Google LLC）。日本語の自然な改行に使用

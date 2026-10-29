@@ -137,7 +137,7 @@ NEBIUS_API_KEY=x TAVILY_API_KEY=y NEBIUS_BASE_URL=http://localhost:9999/v1/ TAVI
 ## License
 
 - Source code: **MIT** (see `LICENSE`)
-- Character artwork, music and voice: **CC BY-NC 4.0** (see `public/assets/LICENSE-ASSETS.md`; music and voice are reused from the author's earlier game *ぼくらの放課後裁判*)
+- Character artwork, music and voice: **CC BY-NC 4.0** (see `public/assets/LICENSE-ASSETS.md`)
 - English "Wait!" voices: **VOICEVOX:白上虎太郎**, **VOICEVOX:冥鳴ひまり** (made with [VOICEVOX](https://voicevox.hiroshiba.jp/), used under each character's terms)
 - `public/vendor/budoux-ja.js`: Japanese phrase segmentation model/parser from [BudouX](https://github.com/google/budoux) (Apache-2.0, © Google LLC), used for natural Japanese line breaks
 
