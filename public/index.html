@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>うわさ裁判 / Rumor Court</title>
+<meta name="description" content="Put internet rumors on trial with evidence. A courtroom debate game powered by NVIDIA Nemotron on Nebius Token Factory and Tavily search.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Dela+Gothic+One&family=Yomogi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="viewport">
+  <div id="stage">
+    <!-- background: after-school debate room -->
+    <div id="bg">
+      <div class="wall"></div>
+      <div class="chalkboard"><div class="chalk-label" id="chalkLabel"></div><div class="chalk-text" id="chalkText"></div></div>
+      <div class="window w1"></div><div class="window w2"></div>
+      <div class="floor"></div>
+    </div>
+
+    <div id="chars">
+      <img class="sprite" id="sp-left" alt="">
+      <img class="sprite" id="sp-center" alt="">
+      <img class="sprite" id="sp-right" alt="">
+    </div>
+    <div id="desks"><div class="desk left"></div><div class="desk center"></div><div class="desk right"></div></div>
+
+    <!-- HUD -->
+    <div id="hud" class="hidden">
+      <div class="hud-life"><span id="lifeLabel"></span><span id="hearts"></span></div>
+      <div class="hud-topic"><span class="topic-label" id="topicLabel"></span><span class="topic-text" id="topicText"></span></div>
+      <div class="hud-round" id="roundLabel"></div>
+      <button class="hud-btn" id="btnRecord"></button>
+    </div>
+
+    <div id="roleTags" class="hidden"><div class="role-tag defense" id="tagDefense"></div><div class="role-tag prosecutor" id="tagProsecutor"></div></div>
+
+    <!-- testimony title banner -->
+    <div id="banner" class="hidden"><div class="banner-small" id="bannerSmall"></div><div class="banner-big" id="bannerBig"></div></div>
+
+    <!-- dialogue -->
+    <div id="textbox" class="hidden">
+      <div id="nameplate"></div>
+      <div id="text"></div>
+      <div id="nextArrow">▼</div>
+    </div>
+
+    <!-- cross-exam controls -->
+    <div id="cross" class="hidden">
+      <button id="btnPrev" class="cx-arrow">◀</button>
+      <button id="btnPress" class="cx-btn press"></button>
+      <div id="cxCounter"></div>
+      <button id="btnPresent" class="cx-btn present"></button>
+      <button id="btnArgue" class="cx-btn argue"></button>
+      <button id="btnNext" class="cx-arrow">▶</button>
+    </div>
+    <div id="hint" class="hidden"></div>
+
+    <!-- overlays -->
+    <div id="cutin" class="hidden"><div class="speedlines"></div><img id="cutinFace" alt=""><div id="cutinText"></div></div>
+    <div id="toast" class="hidden"></div>
+    <div id="presented" class="hidden"></div>
+    <div id="flash"></div>
+    <button id="btnMute" title="Sound (M)">🔊</button>
+
+    <div id="record" class="overlay hidden">
+      <div class="panel record-panel">
+        <div class="panel-head"><span id="recordTitle"></span><button class="close" id="recordClose"></button></div>
+        <div id="recordList"></div>
+      </div>
+    </div>
+
+    <div id="title" class="screen">
+      <div class="title-chars">
+        <img src="assets/sprites/defense_smug.webp" class="tc tc-left" alt="">
+        <img src="assets/sprites/judge_normal.webp" class="tc tc-center" alt="">
+        <img src="assets/sprites/prosecutor_smug.webp" class="tc tc-right" alt="">
+      </div>
+      <div class="title-box">
+        <div class="logo" id="logo"></div>
+        <div class="tagline" id="tagline"></div>
+        <button class="big-btn" id="btnStart"></button>
+        <div class="title-row">
+          <button class="small-btn" id="btnLang"></button>
+        </div>
+        <div class="mode" id="modeLabel"></div>
+      </div>
+    </div>
+
+    <div id="picker" class="overlay hidden">
+      <div class="panel picker-panel">
+        <div class="panel-head"><span id="pickerTitle"></span></div>
+        <div id="presetList"></div>
+        <div id="customBox" class="hidden">
+          <div class="custom-hint" id="customHint"></div>
+          <div class="custom-row"><input id="customInput" maxlength="120"><button class="big-btn small" id="customGo"></button></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sidePick" class="overlay hidden">
+      <div class="panel side-panel">
+        <div class="panel-head"><span id="sideTitle"></span></div>
+        <div class="side-cards">
+          <button class="side-card" data-side="defense"><img src="assets/sprites/defense_smug.webp" alt=""><div class="side-role"></div><div class="side-name"></div><div class="side-claim"></div></button>
+          <button class="side-card" data-side="prosecutor"><img src="assets/sprites/prosecutor_smug.webp" alt=""><div class="side-role"></div><div class="side-name"></div><div class="side-claim"></div></button>
+        </div>
+        <div class="side-note" id="sideNote"></div>
+      </div>
+    </div>
+
+    <div id="argue" class="overlay hidden">
+      <div class="panel argue-panel">
+        <div class="panel-head"><span id="argueTitle"></span></div>
+        <div class="argue-help" id="argueHelp"></div>
+        <textarea id="argueInput" maxlength="200" rows="3"></textarea>
+        <div class="argue-actions"><button class="small-btn" id="argueCancel"></button><button class="big-btn small" id="argueSend"></button></div>
+      </div>
+    </div>
+
+    <div id="loading" class="overlay hidden">
+      <div class="panel loading-panel">
+        <div class="spinner"></div>
+        <div id="loadingText"></div>
+        <div id="loadingChips"></div>
+      </div>
+    </div>
+
+    <div id="verdict" class="overlay hidden">
+      <div class="panel verdict-panel">
+        <div class="verdict-head">
+          <div class="result-badge" id="resultBadge"></div>
+          <div class="verdict-title" id="verdictTitle"></div>
+        </div>
+        <div class="verdict-rumor" id="verdictRumor"></div>
+        <div class="stamp" id="stamp"></div>
+        <div class="verdict-headline" id="verdictHeadline"></div>
+        <div class="verdict-summary" id="verdictSummary"></div>
+        <ul class="verdict-points" id="verdictPoints"></ul>
+        <div class="verdict-tip"><b id="tipLabel"></b><span id="verdictTip"></span></div>
+        <div class="verdict-actions"><button class="big-btn small" id="btnAgain"></button><button class="small-btn" id="btnTitle"></button></div>
+        <div class="powered" id="powered"></div>
+      </div>
+    </div>
+
+    <div id="error" class="overlay hidden">
+      <div class="panel error-panel"><div id="errorText"></div><button class="big-btn small" id="errorRetry"></button></div>
+    </div>
+  </div>
+</div>
+<script src="vendor/budoux-ja.js"></script>
+<script src="i18n.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

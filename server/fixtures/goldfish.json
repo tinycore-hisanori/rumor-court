@@ -1,0 +1,434 @@
+{
+  "id": "goldfish",
+  "rumor": {
+    "ja": "金魚の記憶は3秒しかもたない",
+    "en": "Goldfish only have a 3-second memory"
+  },
+  "queries": [
+    "goldfish three second memory myth",
+    "goldfish memory study months",
+    "fish memory experiment sound feeding",
+    "金魚 記憶 3秒 本当"
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "title": {
+        "ja": "金魚の訓練実験まとめ",
+        "en": "Goldfish training experiments"
+      },
+      "summary": {
+        "ja": "プリマス大学の実験で、金魚はレバーを押してエサをもらう方法を7日以内に覚え、エサが出る時間帯にレバーを押すようになった。2022年のベン＝グリオン大学の研究では、数週間の訓練で金魚が『魚が運転する車』を目標まで操縦した。",
+        "en": "In a University of Plymouth study, goldfish learned within 7 days to push a lever for food, and learned to push it at the time food was available. In a 2022 Ben-Gurion University study, after a couple of weeks of training, goldfish steered a 'fish-operated vehicle' to a target."
+      },
+      "stance": "refutes",
+      "reliability": "medium",
+      "source": "scienceabc.com",
+      "url": "https://www.scienceabc.com/nature/animals/do-goldfish-really-have-a-3-second-memory",
+      "published": "2022-11-11",
+      "icon": "🐟",
+      "big": {
+        "ja": "7日",
+        "en": "7 days"
+      },
+      "small": {
+        "ja": "でレバーをおぼえた",
+        "en": "to learn a food lever"
+      },
+      "easy": {
+        "ja": "金魚は、レバーをおすとエサが出ることを1週間以内におぼえた。車みたいな装置を運転した金魚までいる。",
+        "en": "Goldfish learned within a week that pushing a lever gives food. Some even learned to drive a little fish car!"
+      }
+    },
+    {
+      "id": "E2",
+      "title": {
+        "ja": "野生動物誌の解説",
+        "en": "Wildlife magazine explainer"
+      },
+      "summary": {
+        "ja": "金魚は少なくとも3か月は記憶を保てる。エサが1日1時間しかもらえない条件でも、その時間に合わせてレバーを押すことを覚えた（時間と場所の学習）。",
+        "en": "Goldfish can retain memories for at least three months. When food was available only one hour a day, they learned to push the lever at the right time (time-place learning)."
+      },
+      "stance": "refutes",
+      "reliability": "medium",
+      "source": "discoverwildlife.com",
+      "url": "https://www.discoverwildlife.com/animal-facts/fish/goldfish-memory",
+      "published": "2026-01-14",
+      "icon": "📅",
+      "big": {
+        "ja": "3か月以上",
+        "en": "3+ months"
+      },
+      "small": {
+        "ja": "おぼえていられる",
+        "en": "of memory"
+      },
+      "easy": {
+        "ja": "金魚は少なくとも3か月はおぼえていられる。エサがもらえる時間までおぼえる。",
+        "en": "Goldfish can remember things for at least three months — even what time food comes."
+      }
+    },
+    {
+      "id": "E3",
+      "title": {
+        "ja": "大学ブログ：魚の記憶",
+        "en": "University blog: fish memory"
+      },
+      "summary": {
+        "ja": "イスラエルのテクニオンの研究者は、魚に『音が鳴るとエサがもらえる』ことを覚えさせて自然に放した。数か月後、音を鳴らすと魚が戻ってきた。ここでの対象は『魚』とだけ書かれている。",
+        "en": "Researchers at Israel's Technion trained fish to link a sound with feeding, then released them into the wild. Months later, the fish came back when they heard the sound. The post only says 'fish', not specifically goldfish."
+      },
+      "stance": "context",
+      "reliability": "low",
+      "source": "sites.psu.edu",
+      "url": "https://sites.psu.edu/siowfa15/2015/10/23/do-fish-have-a-three-second-memory",
+      "published": "2015-10-23",
+      "icon": "🔔",
+      "big": {
+        "ja": "数か月後",
+        "en": "Months later"
+      },
+      "small": {
+        "ja": "音で戻ってきた魚",
+        "en": "fish came back to a sound"
+      },
+      "easy": {
+        "ja": "「音が鳴るとエサ」とおぼえた魚が、自然に放されて数か月たっても、音で戻ってきた。ただし、金魚かどうかは書かれていない。",
+        "en": "Fish that learned \"sound = food\" came back months after being released. But it never says they were goldfish."
+      }
+    }
+  ],
+  "testimony": {
+    "prosecutor": [
+      {
+        "title": {
+          "ja": "金魚はすぐ忘れる",
+          "en": "Goldfish forget everything"
+        },
+        "intro": {
+          "ja": "金魚の記憶は3秒！ みんな知ってる常識でしょ？",
+          "en": "Goldfish memory lasts 3 seconds! Everybody knows that!"
+        },
+        "statements": [
+          {
+            "id": "S1",
+            "text": {
+              "ja": "金魚って、水槽の中で同じところばっかりぐるぐる泳いでるじゃない。",
+              "en": "Goldfish just swim around the same spot in their tank, over and over."
+            },
+            "press": {
+              "ja": "何回同じ場所を通っても飽きないのは、さっき通ったことを忘れてるからよ！",
+              "en": "They never get bored passing the same spot because they forget they were just there!"
+            }
+          },
+          {
+            "id": "S2",
+            "text": {
+              "ja": "ごはんをあげると、毎回はじめてみたいに大はしゃぎするのよ。",
+              "en": "Every time you feed them, they get excited like it's the first time ever."
+            },
+            "press": {
+              "ja": "あのはしゃぎっぷり、絶対に前のごはんなんて覚えてないわ。",
+              "en": "The way they freak out? They definitely don't remember their last meal."
+            }
+          },
+          {
+            "id": "S3",
+            "text": {
+              "ja": "金魚に何かを教えこもうとしても、3秒で忘れちゃうから、訓練なんて絶対にムリなの！",
+              "en": "If you try to teach a goldfish anything, it forgets in 3 seconds — training them is totally impossible!"
+            },
+            "press": {
+              "ja": "たとえば『レバーを押したらエサが出る』なんて仕組みを作っても、金魚には覚えられないわ。",
+              "en": "Like, even if you made a lever that gives food when pushed, a goldfish could never learn it."
+            }
+          }
+        ],
+        "flaw": {
+          "statementId": "S3",
+          "evidenceId": "E1",
+          "playerArgument": {
+            "ja": "ScienceABCの記事によると、プリマス大学の実験で金魚はレバーを押してエサをもらう方法を7日以内に覚えたんだ。訓練は『ムリ』じゃない！",
+            "en": "According to ScienceABC, goldfish in a University of Plymouth study learned to push a lever for food within 7 days. Training is NOT impossible!"
+          },
+          "opponentReaction": {
+            "ja": "レ、レバーを押せるの！？ 金魚が！？",
+            "en": "Th-they can push a lever!? Goldfish!?"
+          },
+          "judgeComment": {
+            "ja": "金魚は訓練で新しいことを覚えられる、ということですね。",
+            "en": "So goldfish can learn new things through training."
+          },
+          "alsoAccept": {
+            "E2": {
+              "ja": "Discover Wildlifeの記事では、エサが1日1時間しかもらえない条件でも、金魚はその時間に合わせてレバーを押すことを覚えたとある。訓練は『ムリ』じゃない！",
+              "en": "Discover Wildlife says that even when food was only available one hour a day, goldfish learned to push the lever at the right time. Training is NOT impossible!"
+            }
+          }
+        }
+      },
+      {
+        "title": {
+          "ja": "一晩でリセット",
+          "en": "Reset overnight"
+        },
+        "intro": {
+          "ja": "…覚えられるのは認めるわ。でも、すぐ忘れちゃうのよ！",
+          "en": "...Fine, they can learn. But they forget right away!"
+        },
+        "statements": [
+          {
+            "id": "S1",
+            "text": {
+              "ja": "金魚の脳は、人間とくらべてとっても小さいのよ。",
+              "en": "A goldfish's brain is tiny compared to a human's."
+            },
+            "press": {
+              "ja": "小さい脳に、たくさんの思い出は入らないでしょ？",
+              "en": "You can't fit many memories in a tiny brain, right?"
+            }
+          },
+          {
+            "id": "S2",
+            "text": {
+              "ja": "覚えたとしても、次の日にはもう忘れてるに決まってるわ。長くても1日が限界よ！",
+              "en": "Even if they learn something, they'll have forgotten it by the next day. One day is the absolute limit!"
+            },
+            "press": {
+              "ja": "一晩寝たらリセット！ 何週間も何か月も覚えてるなんて、聞いたことないもの。",
+              "en": "One night's sleep and — reset! I've never heard of them remembering for weeks or months."
+            }
+          },
+          {
+            "id": "S3",
+            "text": {
+              "ja": "3秒っていう話がこんなに有名なのは、それなりの理由があるからよ。",
+              "en": "The 3-second story is famous for a reason, you know."
+            },
+            "press": {
+              "ja": "火のないところに煙は立たないって言うでしょ？",
+              "en": "Where there's smoke, there's fire!"
+            }
+          }
+        ],
+        "flaw": {
+          "statementId": "S2",
+          "evidenceId": "E2",
+          "playerArgument": {
+            "ja": "Discover Wildlifeの記事では、金魚は少なくとも3か月は記憶を保てると書いてある。『1日が限界』どころじゃない！",
+            "en": "Discover Wildlife says goldfish can keep memories for at least three months. Way more than 'one day'!"
+          },
+          "opponentReaction": {
+            "ja": "さ、3か月…！？ わたしの宿題の記憶より長いじゃない…！",
+            "en": "Th-three months...!? That's longer than I remember my homework...!"
+          },
+          "judgeComment": {
+            "ja": "記憶は『日』ではなく『月』の単位で続く、ということですね。",
+            "en": "So their memory lasts months, not days."
+          },
+          "alsoAccept": {
+            "E1": {
+              "ja": "ScienceABCの記事では、金魚はエサが出る時間帯にレバーを押すことを覚えた。何日もかけて覚えたことを使い続けているんだ。『1日が限界』なわけがない！",
+              "en": "ScienceABC says goldfish learned to push the lever at the time food was available — they kept using what they learned over many days. 'One day is the limit' can't be true!"
+            }
+          }
+        }
+      }
+    ],
+    "defense": [
+      {
+        "title": {
+          "ja": "金魚は天才",
+          "en": "Goldfish are geniuses"
+        },
+        "intro": {
+          "ja": "金魚の記憶が3秒なんて、科学的に完全に否定されているよ。",
+          "en": "The 3-second goldfish memory has been completely disproven by science."
+        },
+        "statements": [
+          {
+            "id": "S1",
+            "text": {
+              "ja": "プリマス大学の実験で、金魚はレバーを押してエサをもらうことを覚えたんだ。",
+              "en": "In a University of Plymouth experiment, goldfish learned to push a lever to get food."
+            },
+            "press": {
+              "ja": "3秒で忘れる生き物に、そんなことができるはずがない。",
+              "en": "A creature that forgets in 3 seconds couldn't do that."
+            }
+          },
+          {
+            "id": "S2",
+            "text": {
+              "ja": "しかも金魚は、たった1回やってみせただけで、その場でレバーの使い方を覚えたんだよ。",
+              "en": "And they learned to use the lever on the spot after seeing it done just once."
+            },
+            "press": {
+              "ja": "訓練なんてほとんどいらなかった。一度で十分だったのさ。",
+              "en": "They barely needed training. Once was enough."
+            }
+          },
+          {
+            "id": "S3",
+            "text": {
+              "ja": "金魚は、エサがもらえる時間帯にレバーを押すようにもなったんだ。",
+              "en": "They even learned to push the lever at the time food was available."
+            },
+            "press": {
+              "ja": "時間まで覚えられるなんて、なかなかのものだろう？",
+              "en": "Remembering the time too — impressive, isn't it?"
+            }
+          }
+        ],
+        "flaw": {
+          "statementId": "S2",
+          "evidenceId": "E1",
+          "playerArgument": {
+            "ja": "ScienceABCの記事では、金魚がレバーを覚えるのに『7日以内』かかったとあるわ。1回で覚えたなんて、どこにも書いてない！",
+            "en": "ScienceABC says the goldfish learned the lever 'within 7 days'. Nothing says they learned it after one try!"
+          },
+          "opponentReaction": {
+            "ja": "…くっ、話を盛りすぎてしまったか。",
+            "en": "...Ugh. I exaggerated."
+          },
+          "judgeComment": {
+            "ja": "結論が正しくても、証拠を大げさに言ってはいけませんね。",
+            "en": "Even with the right conclusion, you must not exaggerate the evidence."
+          }
+        }
+      },
+      {
+        "title": {
+          "ja": "海を越える記憶",
+          "en": "Memory in the wild"
+        },
+        "intro": {
+          "ja": "訂正しよう。だが、金魚の記憶力がすごいことに変わりはない。",
+          "en": "I'll correct that. But goldfish memory is still impressive."
+        },
+        "statements": [
+          {
+            "id": "S1",
+            "text": {
+              "ja": "金魚は少なくとも3か月は記憶を保てると言われている。",
+              "en": "Goldfish are said to keep memories for at least three months."
+            },
+            "press": {
+              "ja": "野生動物の専門誌にも、そう書いてある。",
+              "en": "A wildlife magazine says so too."
+            }
+          },
+          {
+            "id": "S2",
+            "text": {
+              "ja": "イスラエルのテクニオンの実験では、自然に放した金魚が、何か月もたってから音を鳴らすと戻ってきたんだ。",
+              "en": "In a Technion experiment in Israel, goldfish released into the wild came back months later when a sound was played."
+            },
+            "press": {
+              "ja": "『音が鳴ればエサ』と覚えた金魚が、自然の中でもちゃんと思い出した。金魚の記憶力の決定的な証拠さ。",
+              "en": "Goldfish that learned 'sound means food' remembered it even in the wild. Decisive proof of goldfish memory."
+            }
+          },
+          {
+            "id": "S3",
+            "text": {
+              "ja": "ベン＝グリオン大学では、金魚が『魚が運転する車』を操縦して目標まで進んだ。",
+              "en": "At Ben-Gurion University, goldfish drove a 'fish-operated vehicle' to a target."
+            },
+            "press": {
+              "ja": "数週間の訓練でできるようになったそうだ。",
+              "en": "They managed it after a couple of weeks of training."
+            }
+          }
+        ],
+        "flaw": {
+          "statementId": "S2",
+          "evidenceId": "E3",
+          "playerArgument": {
+            "ja": "大学ブログをよく読んで！ テクニオンの実験で使われたのは『魚』とだけ書いてあって、金魚だとはどこにも書いてないわ！",
+            "en": "Read the university blog carefully! It only says the Technion study used 'fish' — it never says goldfish!"
+          },
+          "opponentReaction": {
+            "ja": "…た、たしかに。『魚』を『金魚』にすり替えてしまっていた…！",
+            "en": "...R-right. I swapped 'fish' for 'goldfish'...!"
+          },
+          "judgeComment": {
+            "ja": "出典が『何について』書いているのか、正確に読むことが大切ですね。",
+            "en": "It's important to read exactly what a source is talking about."
+          }
+        }
+      }
+    ]
+  },
+  "rebuttals": {
+    "prosecutor": {
+      "ja": [
+        "ふふん、その証拠でわたしの証言のどこが崩れるっていうの？",
+        "関係ない証拠を出しても、信用度が下がるだけよ！",
+        "残念！その証拠、わたしの言ってることと矛盾してないわ。"
+      ],
+      "en": [
+        "Hmph. How does that evidence break anything I said?",
+        "Throwing random evidence around only hurts your credibility!",
+        "Too bad! That evidence doesn't contradict me at all."
+      ]
+    },
+    "defense": {
+      "ja": [
+        "…その証拠は、僕の証言と矛盾していない。よく読んでごらん。",
+        "落ち着いて。その資料は、別の話をしているよ。",
+        "残念だけど、それでは僕の主張は崩れない。"
+      ],
+      "en": [
+        "...That evidence doesn't contradict my testimony. Read it carefully.",
+        "Calm down. That source is about something else.",
+        "Sorry, but that doesn't break my argument."
+      ]
+    }
+  },
+  "verdict": {
+    "label": "FALSE",
+    "headline": {
+      "ja": "金魚の記憶は3秒ではなく、何か月ももつ",
+      "en": "Goldfish remember for months, not seconds"
+    },
+    "summary": {
+      "ja": "実験では、金魚はレバーを押してエサをもらう方法を数日で覚え、エサの時間帯まで学習しました。記憶は少なくとも3か月続くとされ、『3秒』を裏づける証拠は見つかりませんでした。ただし、よく引用される実験の中には金魚ではなく『魚』を対象にしたものもあるので、出典の読み方には注意が必要です。",
+      "en": "In experiments, goldfish learned within days to push a lever for food and even learned feeding times. Their memory is said to last at least three months, and no evidence supports the '3 seconds' claim. Some frequently cited studies, however, were about 'fish' in general, not goldfish — so read sources carefully."
+    },
+    "points": [
+      {
+        "text": {
+          "ja": "金魚は訓練でレバーの使い方やエサの時間を覚えられる。",
+          "en": "Goldfish can be trained to use a lever and learn feeding times."
+        },
+        "evidenceIds": [
+          "E1"
+        ]
+      },
+      {
+        "text": {
+          "ja": "記憶は少なくとも3か月続くとされている。",
+          "en": "Their memory is reported to last at least three months."
+        },
+        "evidenceIds": [
+          "E2"
+        ]
+      },
+      {
+        "text": {
+          "ja": "音とエサを結びつけた魚が、数か月後に戻ってきた研究もある（対象は『魚』）。",
+          "en": "A study found fish trained with a sound returned months later (the subjects were 'fish', not specifically goldfish)."
+        },
+        "evidenceIds": [
+          "E3"
+        ]
+      }
+    ],
+    "tip": {
+      "ja": "結論が正しそうでも、引用されている実験が『何を』調べたのかまで確かめよう。",
+      "en": "Even when a conclusion sounds right, check what exactly the cited experiment studied."
+    }
+  }
+}

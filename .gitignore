@@ -1,0 +1,6 @@
+node_modules/
+.env
+.cache/
+test/shots/
+docs/SUBMISSION_draft.md
+*.log

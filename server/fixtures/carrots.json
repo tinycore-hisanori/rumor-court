@@ -1,0 +1,506 @@
+{
+  "id": "carrots",
+  "rumor": {
+    "ja": "ニンジンを食べると夜目がきくようになる",
+    "en": "Eating carrots gives you better night vision"
+  },
+  "queries": [
+    "carrots improve night vision fact check",
+    "vitamin A deficiency night blindness",
+    "carrots night vision WWII RAF propaganda radar",
+    "ニンジン 夜目 本当"
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "title": {
+        "ja": "NIH ビタミンA資料",
+        "en": "NIH Vitamin A fact sheet"
+      },
+      "summary": {
+        "ja": "ビタミンAが不足したときの最初のサインは「夜盲症」（暗い所で見えにくくなる）。生のニンジン半カップには459mcg RAEのビタミンAが含まれる。",
+        "en": "The first sign of vitamin A deficiency is night blindness (trouble seeing in low light). Half a cup of raw carrots contains 459 mcg RAE of vitamin A."
+      },
+      "stance": "supports",
+      "reliability": "high",
+      "source": "ods.od.nih.gov",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/",
+      "published": null,
+      "icon": "🌙",
+      "big": {
+        "ja": "不足で夜盲症",
+        "en": "Night blindness"
+      },
+      "small": {
+        "ja": "ビタミンAが足りないと…",
+        "en": "when vitamin A is too low"
+      },
+      "easy": {
+        "ja": "ビタミンAが足りないと、暗いところが見えにくくなる。ニンジンには、そのビタミンAのもとがたっぷり入っている。",
+        "en": "Without enough vitamin A, it gets hard to see in the dark. Carrots contain lots of what your body turns into vitamin A."
+      }
+    },
+    {
+      "id": "E2",
+      "title": {
+        "ja": "エースとレーダーの記事",
+        "en": "The ace pilot and radar"
+      },
+      "summary": {
+        "ja": "英空軍のカニンガム（通称キャッツアイ）は20機を撃墜し、うち19機は夜間。秘密の機上レーダー「AI Mk.IV」を使っていた。空軍省はニンジンのおかげという話に乗っかっただけで、ドイツをだます目的ではなかったと英空軍博物館の学芸員は言う。",
+        "en": "RAF pilot John 'Cat's Eyes' Cunningham had 20 victories, 19 at night, using the secret AI Mk. IV airborne radar. An RAF Museum curator says the Air Ministry just went along with the carrot story and never set out to fool the Germans with it."
+      },
+      "stance": "context",
+      "reliability": "medium",
+      "source": "todayifoundout.com",
+      "url": "https://www.todayifoundout.com/index.php/2021/06/how-wwii-made-everybody-think-carrots-were-good-for-eyes-and-why-it-didnt-really-have-to-do-with-tricking-the-germans/",
+      "published": "2021-06",
+      "icon": "📡",
+      "big": {
+        "ja": "正体はレーダー",
+        "en": "It was radar!"
+      },
+      "small": {
+        "ja": "夜のエースのひみつ",
+        "en": "the night ace's real secret"
+      },
+      "easy": {
+        "ja": "夜に敵の飛行機をたくさん落としたパイロットは、ニンジンではなく、ひみつのレーダーを使っていた。",
+        "en": "The pilot who shot down many planes at night was using secret radar, not carrots."
+      }
+    },
+    {
+      "id": "E3",
+      "title": {
+        "ja": "英食糧省のニンジン宣伝",
+        "en": "Ministry of Food carrot campaign"
+      },
+      "summary": {
+        "ja": "第二次世界大戦中、イギリス食糧省は「ドクター・キャロット」などの宣伝でニンジンを国をあげて売りこんだ。配給制の外で家庭菜園でも育てられ、余ったニンジンは10万トンにのぼった。",
+        "en": "During WWII, Britain's Ministry of Food heavily promoted carrots with campaigns like 'Doctor Carrot – the Children's Best Friend'. Carrots weren't rationed, could be home-grown, and a 100,000-ton surplus built up."
+      },
+      "stance": "context",
+      "reliability": "medium",
+      "source": "warhistoryonline.com",
+      "url": "https://www.warhistoryonline.com/instant-articles/carrots-improve-night-vision.html",
+      "published": "2018-12-15",
+      "icon": "📢",
+      "big": {
+        "ja": "10万トン",
+        "en": "100,000 tons"
+      },
+      "small": {
+        "ja": "あまったニンジンの量",
+        "en": "of extra carrots"
+      },
+      "easy": {
+        "ja": "戦争中のイギリス政府は「ニンジンを食べよう！」と国じゅうで宣伝した。ニンジンがあまるほどだった。",
+        "en": "During the war, the British government told everyone to eat carrots. There were so many that 100,000 tons were left over."
+      }
+    },
+    {
+      "id": "E4",
+      "title": {
+        "ja": "医師のコラム",
+        "en": "A doctor's column"
+      },
+      "summary": {
+        "ja": "ニンジンは、ビタミンA（やルテイン）が不足していない人の視力をよくするわけではない、と医師のマイク・ロイゼン氏は説明している。",
+        "en": "Dr. Mike Roizen explains that carrots do not improve the eyesight of people who are not lacking vitamin A (or lutein)."
+      },
+      "stance": "refutes",
+      "reliability": "medium",
+      "source": "michaelfroizenmd.substack.com",
+      "url": "https://michaelfroizenmd.substack.com/p/can-you-improve-your-night-vision",
+      "published": "2024-06-18",
+      "icon": "👓",
+      "big": {
+        "ja": "効果なし",
+        "en": "No effect"
+      },
+      "small": {
+        "ja": "足りている人の視力には",
+        "en": "if you already get enough"
+      },
+      "easy": {
+        "ja": "ビタミンAが足りている人がニンジンを食べても、目はよくならない、とお医者さんは言っている。",
+        "en": "A doctor says carrots won't improve your eyesight if you already get enough vitamin A."
+      }
+    },
+    {
+      "id": "E5",
+      "title": {
+        "ja": "眼科クリニックの解説",
+        "en": "Eye clinic explainer"
+      },
+      "summary": {
+        "ja": "ニンジンをたくさん食べても、夜の視力がふつう以上によくなることはない。βカロテンをとりすぎると皮ふが黄色っぽくなる「柑皮症」になり、ビタミンAのとりすぎは体に毒になる。",
+        "en": "Eating lots of carrots won't push night vision beyond normal. Too much beta-carotene can cause carotenemia (yellowish skin), and too much vitamin A is toxic."
+      },
+      "stance": "refutes",
+      "reliability": "medium",
+      "source": "ceenta.com",
+      "url": "https://www.ceenta.com/news-blog/carrots-night-vision-and-world-war-ii",
+      "published": "2016-11-18",
+      "icon": "🟠",
+      "big": {
+        "ja": "食べすぎ注意",
+        "en": "Too many = orange"
+      },
+      "small": {
+        "ja": "肌が黄色くなることも",
+        "en": "your skin can turn yellowish"
+      },
+      "easy": {
+        "ja": "ニンジンをいっぱい食べても、夜の目がふつうよりよくなることはない。食べすぎると肌が黄色っぽくなる。",
+        "en": "Eating lots of carrots won't give you better-than-normal night vision. Too many can make your skin yellowish."
+      }
+    }
+  ],
+  "testimony": {
+    "prosecutor": [
+      {
+        "title": {
+          "ja": "ニンジンと夜のエース",
+          "en": "Carrots and the night ace"
+        },
+        "intro": {
+          "ja": "ニンジンで夜目がきく。これは歴史が証明してるんだから！",
+          "en": "Carrots give you night vision. History itself proves it!"
+        },
+        "statements": [
+          {
+            "id": "S1",
+            "text": {
+              "ja": "ニンジンには、体の中でビタミンAに変わるβカロテンがたっぷり入ってるの。",
+              "en": "Carrots are packed with beta-carotene, which your body turns into vitamin A."
+            },
+            "press": {
+              "ja": "ビタミンAは目にとって大事な栄養なのよ。ここまでは文句ないでしょ？",
+              "en": "Vitamin A is important for your eyes. No complaints so far, right?"
+            }
+          },
+          {
+            "id": "S2",
+            "text": {
+              "ja": "ビタミンAが足りないと、暗いところで見えにくくなる「夜盲症」になるのよ。",
+              "en": "Without enough vitamin A, you get night blindness and can't see well in the dark."
+            },
+            "press": {
+              "ja": "つまりビタミンAは『夜に見る力』そのものに関わってるってこと！",
+              "en": "So vitamin A is directly tied to seeing at night!"
+            }
+          },
+          {
+            "id": "S3",
+            "text": {
+              "ja": "第二次世界大戦で、イギリス空軍のエースはニンジンを食べて、夜でもドイツ機を見つけて撃ち落としたの。それが何よりの証拠よ！",
+              "en": "In WWII, Britain's ace pilot ate carrots and spotted German planes at night to shoot them down. That's the best proof there is!"
+            },
+            "press": {
+              "ja": "そのエースは『キャッツアイ』って呼ばれてたのよ。暗やみで敵が見えたのは、ニンジンのおかげに決まってるわ！",
+              "en": "They called him 'Cat's Eyes'! Seeing enemies in the dark had to be thanks to carrots!"
+            }
+          }
+        ],
+        "flaw": {
+          "statementId": "S3",
+          "evidenceId": "E2",
+          "playerArgument": {
+            "ja": "Today I Found Out の記事によると、カニンガムが夜に敵機を撃ち落とせたのは、秘密のレーダー「AI Mk.IV」のおかげだ。ニンジンのおかげじゃない！",
+            "en": "According to Today I Found Out, Cunningham shot down planes at night thanks to the secret AI Mk. IV radar — not carrots!"
+          },
+          "opponentReaction": {
+            "ja": "レ、レーダー…！？ ニンジンじゃなかったの…！？",
+            "en": "R-radar...!? It wasn't the carrots...!?"
+          },
+          "judgeComment": {
+            "ja": "エースの活躍は、ニンジンの効果の証拠にはならない、ということですね。",
+            "en": "So the ace's success is not evidence that carrots work."
+          },
+          "alsoAccept": {
+            "E4": {
+              "ja": "ロイゼン医師のコラムでは、ビタミンAが足りている人がニンジンを食べても視力はよくならないとある。エースが夜に敵を見つけられたのを、ニンジンのおかげにはできない！",
+              "en": "Dr. Roizen's column says carrots don't improve eyesight in people who already get enough vitamin A. You can't credit carrots for the ace spotting planes at night!"
+            },
+            "E5": {
+              "ja": "眼科クリニックの解説では、ニンジンをたくさん食べても夜の視力がふつう以上によくなることはないとある。エースの活躍をニンジンのおかげにはできない！",
+              "en": "The eye clinic explains that eating lots of carrots won't push night vision beyond normal. The ace's success can't be credited to carrots!"
+            }
+          }
+        }
+      },
+      {
+        "title": {
+          "ja": "食べるほど見える？",
+          "en": "The more, the better?"
+        },
+        "intro": {
+          "ja": "エースの話はナシにするわ。でもね、ニンジンが目にいいのは科学的な事実よ！",
+          "en": "Fine, forget the pilot. But carrots being good for your eyes is a scientific fact!"
+        },
+        "statements": [
+          {
+            "id": "S1",
+            "text": {
+              "ja": "ビタミンAが不足したときの最初のサインは夜盲症。国の研究機関もそう書いてるわ。",
+              "en": "The first sign of vitamin A deficiency is night blindness. A national health agency says so."
+            },
+            "press": {
+              "ja": "アメリカの国立衛生研究所の資料よ。信頼できるでしょ？",
+              "en": "It's from the US National Institutes of Health. Pretty reliable, huh?"
+            }
+          },
+          {
+            "id": "S2",
+            "text": {
+              "ja": "しかも生のニンジン半カップで、ビタミンAがしっかりとれるの。",
+              "en": "And just half a cup of raw carrots gives you a good amount of vitamin A."
+            },
+            "press": {
+              "ja": "459マイクログラムよ！手軽でしょ？",
+              "en": "459 micrograms! Easy, right?"
+            }
+          },
+          {
+            "id": "S3",
+            "text": {
+              "ja": "だから、ニンジンをたくさん食べれば食べるほど、だれでも夜目がどんどんよくなるの！",
+              "en": "So the more carrots anyone eats, the better their night vision gets!"
+            },
+            "press": {
+              "ja": "ビタミンAが足りてる人だって、もっと食べればもっと見えるようになるはずよ。多いほどいいに決まってるでしょ？",
+              "en": "Even people who already get enough vitamin A will see better if they eat more. More is always better!"
+            }
+          }
+        ],
+        "flaw": {
+          "statementId": "S3",
+          "evidenceId": "E4",
+          "playerArgument": {
+            "ja": "ロイゼン医師のコラムでは、ビタミンAが足りている人がニンジンを食べても、視力はよくならないと書いてある。「だれでも」「食べるほど」は言いすぎだ！",
+            "en": "Dr. Roizen's column says carrots don't improve eyesight for people who already get enough vitamin A. 'Anyone' and 'the more, the better' go too far!"
+          },
+          "opponentReaction": {
+            "ja": "そ、そんな…わたしの毎朝のニンジンジュースは…！",
+            "en": "N-no way... What about my morning carrot juice...!"
+          },
+          "judgeComment": {
+            "ja": "足りない人には助けになっても、足りている人の視力を上げるわけではない。大事な区別ですね。",
+            "en": "Helping people who lack vitamin A is different from boosting everyone's eyesight. An important distinction."
+          },
+          "alsoAccept": {
+            "E5": {
+              "ja": "眼科クリニックの解説には、ニンジンをたくさん食べても夜の視力がふつう以上によくなることはない、とある。それどころか、βカロテンのとりすぎで皮ふが黄色っぽくなることもある。「食べるほどいい」なんて言えない！",
+              "en": "The eye clinic says eating lots of carrots won't push night vision beyond normal — and too much beta-carotene can even turn your skin yellowish. 'The more, the better' is wrong!"
+            }
+          }
+        }
+      }
+    ],
+    "defense": [
+      {
+        "title": {
+          "ja": "ただの戦争の迷信",
+          "en": "Just a wartime myth"
+        },
+        "intro": {
+          "ja": "ニンジンで夜目がきくなんて、ただの迷信さ。",
+          "en": "Carrots for night vision? It's just a myth."
+        },
+        "statements": [
+          {
+            "id": "S1",
+            "text": {
+              "ja": "この話は、第二次世界大戦中のイギリスで広まったものなんだ。",
+              "en": "This story spread in Britain during World War II."
+            },
+            "press": {
+              "ja": "当時の新聞や宣伝が、この話を広めたと言われている。",
+              "en": "Newspapers and campaigns of the time are said to have spread it."
+            }
+          },
+          {
+            "id": "S2",
+            "text": {
+              "ja": "夜に活躍したパイロットは、実は秘密のレーダーを使っていたんだよ。",
+              "en": "The pilots who did well at night were actually using secret radar."
+            },
+            "press": {
+              "ja": "ニンジンの話は、そのレーダーから目をそらすのに都合がよかったのさ。",
+              "en": "The carrot story conveniently drew attention away from the radar."
+            }
+          },
+          {
+            "id": "S3",
+            "text": {
+              "ja": "そもそもニンジンの栄養と目の働きには、何の関係もない。目にとっては意味のない野菜なんだ。",
+              "en": "Besides, carrot nutrients have nothing to do with how your eyes work. They're meaningless for your eyes."
+            },
+            "press": {
+              "ja": "ニンジンを食べても食べなくても、目には一切影響しない。足りていようがいまいが、ね。",
+              "en": "Eat carrots or not, your eyes aren't affected at all — whether you're short on nutrients or not."
+            }
+          }
+        ],
+        "flaw": {
+          "statementId": "S3",
+          "evidenceId": "E1",
+          "playerArgument": {
+            "ja": "アメリカ国立衛生研究所の資料では、ビタミンAが不足したときの最初のサインが「夜盲症」だとされている。ニンジンはそのビタミンAのもとになるんだから、目と関係ないなんて言えないわ！",
+            "en": "The NIH fact sheet says the first sign of vitamin A deficiency is night blindness. Carrots provide vitamin A, so you can't say they have nothing to do with your eyes!"
+          },
+          "opponentReaction": {
+            "ja": "くっ…ビタミンAが不足しているケースを見落としていた…！",
+            "en": "Ugh... I overlooked people who lack vitamin A...!"
+          },
+          "judgeComment": {
+            "ja": "足りない人にとっては、ニンジンの栄養は目に関わる。ここは押さえておきましょう。",
+            "en": "For people lacking vitamin A, carrot nutrients do matter for the eyes. Let's keep that in mind."
+          }
+        }
+      },
+      {
+        "title": {
+          "ja": "うわさの正体",
+          "en": "Where the rumor came from"
+        },
+        "intro": {
+          "ja": "…訂正しよう。栄養としては関係がある。だが、それでも『夜目がきく』とは言えない。",
+          "en": "...I'll correct myself. Nutrition matters. But that still doesn't give you 'night vision'."
+        },
+        "statements": [
+          {
+            "id": "S1",
+            "text": {
+              "ja": "ビタミンAが足りている人がたくさん食べても、視力が上がるわけじゃない。",
+              "en": "If you already get enough vitamin A, eating more won't raise your eyesight."
+            },
+            "press": {
+              "ja": "医師もそう説明している。足りていれば、それ以上の効果はないんだ。",
+              "en": "Doctors explain it that way too. Once you have enough, there's no extra effect."
+            }
+          },
+          {
+            "id": "S2",
+            "text": {
+              "ja": "食べすぎると、皮ふが黄色っぽくなる「柑皮症」になることもある。",
+              "en": "Eat too many and your skin can even turn yellowish — that's carotenemia."
+            },
+            "press": {
+              "ja": "体に害はないそうだけど、見た目でびっくりするかもね。",
+              "en": "It's harmless, they say, but it might surprise you."
+            }
+          },
+          {
+            "id": "S3",
+            "text": {
+              "ja": "それに、ニンジンをすすめるキャンペーンなんて、戦争中のイギリスでは一度も行われていないんだ。",
+              "en": "Also, wartime Britain never ran any campaign to promote carrots."
+            },
+            "press": {
+              "ja": "パイロットのうわさが一人歩きしただけさ。政府が国民にニンジンを食べさせようとした記録なんてないよ。",
+              "en": "The pilot rumor just spread on its own. There's no record of the government pushing people to eat carrots."
+            }
+          }
+        ],
+        "flaw": {
+          "statementId": "S3",
+          "evidenceId": "E3",
+          "playerArgument": {
+            "ja": "War History Online の記事によると、イギリス食糧省は「ドクター・キャロット」を使って、国をあげてニンジンを売りこんでいた。余ったニンジンは10万トンにもなったのよ！",
+            "en": "War History Online says Britain's Ministry of Food promoted carrots nationwide with 'Doctor Carrot' — there was a 100,000-ton surplus!"
+          },
+          "opponentReaction": {
+            "ja": "ド、ドクター・キャロット…！？ そんなキャラクターまで…！",
+            "en": "D-Doctor Carrot...!? They even had a mascot...!"
+          },
+          "judgeComment": {
+            "ja": "うわさが広まった背景には、国のキャンペーンもあった。これも大切な事実ですね。",
+            "en": "A government campaign helped the rumor spread, too. Another important fact."
+          }
+        }
+      }
+    ]
+  },
+  "rebuttals": {
+    "prosecutor": {
+      "ja": [
+        "ふふん、その証拠でわたしの証言のどこが崩れるっていうの？",
+        "関係ない証拠を出しても、信用度が下がるだけよ！",
+        "残念！その証拠、わたしの言ってることと矛盾してないわ。"
+      ],
+      "en": [
+        "Hmph. How does that evidence break anything I said?",
+        "Throwing random evidence around only hurts your credibility!",
+        "Too bad! That evidence doesn't contradict me at all."
+      ]
+    },
+    "defense": {
+      "ja": [
+        "…その証拠は、僕の証言と矛盾していない。よく読んでごらん。",
+        "落ち着いて。その資料は、別の話をしているよ。",
+        "残念だけど、それでは僕の主張は崩れない。"
+      ],
+      "en": [
+        "...That evidence doesn't contradict my testimony. Read it carefully.",
+        "Calm down. That source is about something else.",
+        "Sorry, but that doesn't break my argument."
+      ]
+    }
+  },
+  "verdict": {
+    "label": "MOSTLY_FALSE",
+    "headline": {
+      "ja": "ニンジンで『夜目がよくなる』は、ほぼウソ",
+      "en": "Carrots won't give you super night vision"
+    },
+    "summary": {
+      "ja": "ニンジンに含まれるβカロテンはビタミンAになり、ビタミンAが不足すると夜盲症になるので、不足している人には役立ちます。でも、足りている人がたくさん食べても夜の視力はよくなりません。この話が有名になったのは、第二次世界大戦中のイギリスの宣伝が大きなきっかけでした。",
+      "en": "Carrots provide beta-carotene, which becomes vitamin A, and a lack of vitamin A causes night blindness — so carrots help people who are deficient. But for people who already get enough, eating more does not improve night vision. The story became famous largely through British wartime publicity."
+    },
+    "points": [
+      {
+        "text": {
+          "ja": "ビタミンA不足の最初のサインは夜盲症。不足している人には、ニンジンは役立つ。",
+          "en": "Night blindness is the first sign of vitamin A deficiency, so carrots help people who lack it."
+        },
+        "evidenceIds": [
+          "E1"
+        ]
+      },
+      {
+        "text": {
+          "ja": "足りている人の視力は、ニンジンを食べてもよくならない。食べすぎには注意。",
+          "en": "Carrots don't improve eyesight in people who already get enough vitamin A — and too much has downsides."
+        },
+        "evidenceIds": [
+          "E4",
+          "E5"
+        ]
+      },
+      {
+        "text": {
+          "ja": "夜のエースの活躍は、本当はレーダーのおかげだった。",
+          "en": "The night-fighter ace's success was really due to radar."
+        },
+        "evidenceIds": [
+          "E2"
+        ]
+      },
+      {
+        "text": {
+          "ja": "戦時中、イギリス政府はニンジンを国をあげて宣伝していた。",
+          "en": "The wartime British government actively promoted carrots."
+        },
+        "evidenceIds": [
+          "E3"
+        ]
+      }
+    ],
+    "tip": {
+      "ja": "「〇〇を食べれば〜になる」という話は、『足りない人に効く』のか『だれにでも効く』のかを分けて考えよう。",
+      "en": "When you hear 'eat X and you'll get Y', ask: does it help only people who lack something, or everyone?"
+    }
+  }
+}
