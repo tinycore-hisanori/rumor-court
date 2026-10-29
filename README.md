@@ -15,6 +15,21 @@ It turns fact-checking — a boring chore — into a game of spotting overstatem
 
 ---
 
+## Screenshots
+
+All screenshots are from a real LIVE run ("Alligators live in the New York City sewers").
+
+| | |
+|---|---|
+| ![Title](docs/screenshots/01-title.jpg) **Title** — English / 日本語 | ![Investigating](docs/screenshots/02-investigating.jpg) **LIVE investigation** — Nemotron Nano plans the queries, Tavily searches the web |
+| ![Pick a side](docs/screenshots/03-side.jpg) **Pick your side** — argue TRUE or FALSE | ![Court Record](docs/screenshots/04-court-record.jpg) **Court Record** — real sources become evidence cards |
+| ![Cross-examination](docs/screenshots/05-cross-examination.jpg) **Cross-examination** — Press, Present or Argue | ![Argue](docs/screenshots/06-argue.jpg) **Argue** — Nemotron judges your own reasoning |
+| ![Present](docs/screenshots/07-present.jpg) **Present** — slam the card that breaks the statement | ![Wait!](docs/screenshots/08-wait.jpg) **Wait!** — the lie is broken |
+| ![Round 2](docs/screenshots/09-round2-concession.jpg) **Testimony 2** — the rival concedes and changes tactics | ![Verdict](docs/screenshots/10-verdict.jpg) **What's actually true** — every point linked to its source |
+| ![Japanese](docs/screenshots/11-japanese.jpg) **日本語** — the same game in Japanese | |
+
+---
+
 ## How it works
 
 ```
@@ -72,20 +87,77 @@ Tavily is the game's detective: every live case runs 3-4 parallel `search_depth:
 
 ---
 
-## Run it
+## Installation
 
-Requirements: Node.js 18+ (no npm dependencies).
+### 1. Requirements
+
+- **Node.js 18 or newer** (https://nodejs.org). No npm packages are needed — there is no `npm install` step.
+- Git (or download the ZIP from GitHub).
+- For LIVE mode: a **Nebius Token Factory API key** and a **Tavily API key**. Without them the game still runs in DEMO mode.
+
+### 2. Get the API keys (LIVE mode only)
+
+| Key | Where | Notes |
+|---|---|---|
+| `NEBIUS_API_KEY` | Nebius Token Factory — https://tokenfactory.nebius.com → create an API key | Used for Nemotron 3 Nano / Super / Ultra |
+| `TAVILY_API_KEY` | Tavily — https://app.tavily.com → API Keys | The free plan (1,000 credits/month) is enough to try it; one new case uses about 6–8 credits |
+
+### 3. Download and configure
 
 ```bash
 git clone https://github.com/tinycore-hisanori/rumor-court
 cd rumor-court
-cp .env.example .env      # add NEBIUS_API_KEY and TAVILY_API_KEY
-npm start                 # http://localhost:8787
+cp .env.example .env        # Windows (cmd): copy .env.example .env
 ```
 
-- **LIVE mode** (both keys set): type any rumor; the game investigates it on the spot.
+Open `.env` in a text editor and paste your keys:
+
+```
+NEBIUS_API_KEY=your-nebius-key
+TAVILY_API_KEY=your-tavily-key
+```
+
+Never commit `.env` — it is already in `.gitignore`.
+
+### 4. Start
+
+```bash
+npm start
+```
+
+Open **http://localhost:8787**. The console prints `[LIVE: Nemotron on Nebius + Tavily]` when both keys are loaded, or `DEMO mode` otherwise. You can also check `http://localhost:8787/api/status` (`"mode":"live"` or `"demo"`).
+
+- **LIVE mode** (both keys set): pick a rumor or type any rumor; the game investigates it on the spot.
 - **DEMO mode** (no keys): two bundled cases with real, linked sources are playable offline.
   The bundled preset rumors are also served from these files in LIVE mode, so the demo never fails (set `LIVE_PRESETS=1` to run them live too).
+
+### 5. Optional settings (`.env`)
+
+| Variable | Default | Meaning |
+|---|---|---|
+| `PORT` | `8787` | HTTP port |
+| `LIVE_CASES_PER_DAY` / `LIVE_CASES_PER_MONTH` | `10` / `100` | Hard caps on **new** live investigations (cached rumors are free) |
+| `LIVE_CASES_PER_IP_PER_HOUR` | `3` | Per-visitor limit |
+| `MODEL_NANO` / `MODEL_SUPER` / `MODEL_ULTRA` | Nemotron 3 models | Swap any model on Token Factory |
+| `NEBIUS_BASE_URL` | `https://api.tokenfactory.nebius.com/v1/` | Token Factory endpoint |
+| `NEMOTRON_ENABLE_THINKING` | off | `1` lets Nemotron reason before answering (slower, more tokens) |
+| `HIDE_BUNDLED_CASES` | off | `1` shows only your `rumors.txt` list in LIVE mode |
+
+### 6. Deploy on a Linux server (optional)
+
+The `deploy/` folder has a systemd unit and an nginx reverse-proxy config.
+
+```bash
+sudo mkdir -p /opt/rumor-court && sudo cp -r . /opt/rumor-court/
+sudo cp .env /opt/rumor-court/.env && sudo chown -R www-data:www-data /opt/rumor-court
+sudo cp deploy/rumor-court.service /etc/systemd/system/
+sudo systemctl daemon-reload && sudo systemctl enable --now rumor-court
+# nginx: edit server_name in deploy/nginx-rumor.conf, then
+sudo cp deploy/nginx-rumor.conf /etc/nginx/sites-available/rumor-court
+sudo ln -s /etc/nginx/sites-available/rumor-court /etc/nginx/sites-enabled/ && sudo nginx -t && sudo systemctl reload nginx
+```
+
+Keep `proxy_read_timeout` long (a new live case takes 30–90 s). Add HTTPS with your usual method (e.g. certbot or a Cloudflare origin certificate).
 
 ### Your own rumor list (`rumors.txt`)
 

@@ -15,6 +15,21 @@
 
 ---
 
+## スクリーンショット
+
+すべて実際の LIVE プレイ（うわさ「Alligators live in the New York City sewers」）の画面です。
+
+| | |
+|---|---|
+| ![タイトル](docs/screenshots/01-title.jpg) **タイトル** — 英語 / 日本語 | ![調査中](docs/screenshots/02-investigating.jpg) **LIVE 調査** — Nemotron Nano が検索語を考え、Tavily がウェブを調べる |
+| ![陣営選び](docs/screenshots/03-side.jpg) **陣営を選ぶ** — 本当だ派か、ウソだ派か | ![法廷記録](docs/screenshots/04-court-record.jpg) **法廷記録** — 本物の情報源が証拠品カードになる |
+| ![尋問](docs/screenshots/05-cross-examination.jpg) **尋問** — ゆさぶる・つきつける・つっこむ | ![つっこむ](docs/screenshots/06-argue.jpg) **つっこむ** — 自分の言葉の理屈を Nemotron が判定 |
+| ![つきつける](docs/screenshots/07-present.jpg) **つきつける** — 発言を崩す証拠品を出す | ![待った](docs/screenshots/08-wait.jpg) **Wait!** — ウソが崩れる瞬間 |
+| ![2回目の証言](docs/screenshots/09-round2-concession.jpg) **2回目の証言** — 相手が負けを認めて作戦を変える | ![判決](docs/screenshots/10-verdict.jpg) **本当のところ** — 要点ごとに出典リンク付き |
+| ![日本語](docs/screenshots/11-japanese.jpg) **日本語版** — 同じゲームを日本語で | |
+
+---
+
 ## しくみ
 
 ```
@@ -70,20 +85,77 @@ Tavily はゲームの探偵役です。新しいうわさごとに、`search_de
 
 ---
 
-## 動かし方
+## インストール手順
 
-必要なもの：Node.js 18 以上（npm パッケージは不要）
+### 1. 必要なもの
+
+- **Node.js 18 以上**（https://nodejs.org）。npm パッケージは使わないので、`npm install` は不要です。
+- Git（または GitHub から ZIP をダウンロード）
+- LIVE モードで遊ぶ場合：**Nebius Token Factory の API キー** と **Tavily の API キー**。キーがなくてもデモモードで動きます。
+
+### 2. API キーを用意する（LIVE モードのみ）
+
+| キー | 取得先 | メモ |
+|---|---|---|
+| `NEBIUS_API_KEY` | Nebius Token Factory — https://tokenfactory.nebius.com で API キーを作成 | Nemotron 3 Nano / Super / Ultra に使用 |
+| `TAVILY_API_KEY` | Tavily — https://app.tavily.com の API Keys | 無料プラン（月1,000クレジット）で試せます。新しいうわさ1件で約6〜8クレジット |
+
+### 3. ダウンロードと設定
 
 ```bash
 git clone https://github.com/tinycore-hisanori/rumor-court
 cd rumor-court
-cp .env.example .env      # NEBIUS_API_KEY と TAVILY_API_KEY を書く
-npm start                 # http://localhost:8787
+cp .env.example .env        # Windows（コマンドプロンプト）では: copy .env.example .env
 ```
 
-- **LIVE モード**（キーが両方あるとき）：好きなうわさを入力すると、その場で調査します。
+`.env` をテキストエディタで開き、キーを書き込みます。
+
+```
+NEBIUS_API_KEY=あなたのNebiusキー
+TAVILY_API_KEY=あなたのTavilyキー
+```
+
+`.env` は絶対に公開しないでください（`.gitignore` で除外済みです）。
+
+### 4. 起動
+
+```bash
+npm start
+```
+
+ブラウザで **http://localhost:8787** を開きます。キーが2つとも読み込まれると、画面（コンソール）に `[LIVE: Nemotron on Nebius + Tavily]`、なければ `DEMO mode` と表示されます。`http://localhost:8787/api/status` でも確認できます（`"mode":"live"` または `"demo"`）。
+
+- **LIVE モード**（キーが両方あるとき）：一覧から選ぶか、好きなうわさを入力すると、その場で調査します。
 - **デモモード**（キーなし）：本物の出典付きの事件2本を、オフラインで遊べます。
   LIVE モードでも、この2本は同梱データから読み込むので、デモが失敗することはありません（`LIVE_PRESETS=1` で、これらもLIVEで調査します）。
+
+### 5. 追加の設定（`.env`）
+
+| 変数 | 初期値 | 意味 |
+|---|---|---|
+| `PORT` | `8787` | 待ち受けポート |
+| `LIVE_CASES_PER_DAY` / `LIVE_CASES_PER_MONTH` | `10` / `100` | **新しい** LIVE 調査の上限（調査済みのうわさは無料） |
+| `LIVE_CASES_PER_IP_PER_HOUR` | `3` | 1人あたりの上限 |
+| `MODEL_NANO` / `MODEL_SUPER` / `MODEL_ULTRA` | Nemotron 3 の各モデル | Token Factory 上の別モデルに差し替え可能 |
+| `NEBIUS_BASE_URL` | `https://api.tokenfactory.nebius.com/v1/` | Token Factory のエンドポイント |
+| `NEMOTRON_ENABLE_THINKING` | オフ | `1` で回答前に推論させる（遅く、トークンも多く使う） |
+| `HIDE_BUNDLED_CASES` | オフ | `1` で LIVE モードでは `rumors.txt` の一覧だけを表示 |
+
+### 6. Linux サーバーで公開する（任意）
+
+`deploy/` フォルダに systemd の設定と nginx のリバースプロキシ設定があります。
+
+```bash
+sudo mkdir -p /opt/rumor-court && sudo cp -r . /opt/rumor-court/
+sudo cp .env /opt/rumor-court/.env && sudo chown -R www-data:www-data /opt/rumor-court
+sudo cp deploy/rumor-court.service /etc/systemd/system/
+sudo systemctl daemon-reload && sudo systemctl enable --now rumor-court
+# nginx: deploy/nginx-rumor.conf の server_name を自分のドメインに書き換えてから
+sudo cp deploy/nginx-rumor.conf /etc/nginx/sites-available/rumor-court
+sudo ln -s /etc/nginx/sites-available/rumor-court /etc/nginx/sites-enabled/ && sudo nginx -t && sudo systemctl reload nginx
+```
+
+新しい LIVE 調査は30〜90秒かかるので、`proxy_read_timeout` は長めにしておいてください。HTTPS はいつもの方法（certbot や Cloudflare のオリジン証明書など）で設定します。
 
 ### うわさの一覧（`rumors.txt`）
 
