@@ -6,6 +6,7 @@ After=network.target
 WorkingDirectory=/opt/rumor-court
 ExecStart=/usr/bin/node server/server.js
 Environment=PORT=8787
+Environment=HOST=127.0.0.1
 Restart=always
 RestartSec=3
 User=www-data

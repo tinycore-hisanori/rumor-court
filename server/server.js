@@ -276,6 +276,7 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, () => {
+// HOST=127.0.0.1 keeps the app reachable only through the local reverse proxy (nginx).
+server.listen(PORT, process.env.HOST || undefined, () => {
   console.log(`Rumor Court running at http://localhost:${PORT}  [${LIVE ? 'LIVE: Nemotron on Nebius + Tavily' : 'DEMO mode (set NEBIUS_API_KEY and TAVILY_API_KEY for live)'}]`);
 });
